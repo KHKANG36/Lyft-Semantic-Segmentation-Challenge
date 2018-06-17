@@ -1,5 +1,6 @@
 # Lyft-Semantic-Segmentation-Challenge
 ### Lyft Challenge : Semantic Segmentation for Vehicle and Road in Video (Finally Ranked on 38th/155)
+![Test image](https://github.com/KHKANG36/Lyft-Semantic-Segmentation-Challenge/blob/master/data/challenge_result/Main.gif)
 
 ### __Initial Ranking and Score (The end of the first week of Challenge) - Ranked 22nd, 76.8488__
 
