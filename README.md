@@ -14,7 +14,7 @@
  
 ### Scoring/Ranking Criteria 
 
-- Weighted F-Score
+Weighted F-Score
 The challenge grades and ranks participants on a weighted F-score.It's more important to have better precision on detecting the road surface and better recall on cars (because you'd rather avoid a non-existent car (false positive) than crash into one you didn't detect (false negative)).
 
 ![Test image](https://github.com/KHKANG36/Lyft-Semantic-Segmentation-Challenge/blob/master/data/challenge_result/Fscore.png)
