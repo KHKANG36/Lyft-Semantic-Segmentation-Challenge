@@ -23,3 +23,4 @@ It was chosen that the beta for cars would be 2 and beta for roads would be 0.5 
 
 ## My Approach
 ### 1) Data
+![Test image](https://github.com/KHKANG36/Lyft-Semantic-Segmentation-Challenge/blob/master/data/carla_data/sample_data.png)
