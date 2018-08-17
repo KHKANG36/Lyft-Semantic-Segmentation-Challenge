@@ -24,6 +24,8 @@ It was chosen that the beta for cars would be 2 and beta for roads would be 0.5 
 ## My Approach
 ### 1) Data
 ![Test image](https://github.com/KHKANG36/Lyft-Semantic-Segmentation-Challenge/blob/master/data/carla_data/sample_data.png)
-All camera data for this project comes from the the 'CARLA' simulator. Gathering data from a simulator is much faster than the real-world and allows us to iterate on our perception pipeline quickly before fine tuning it with real world data.
+All camera data for this project comes from the the 'CARLA' simulator. Gathering data from a simulator is much faster than the real-world and allows us to iterate on our perception pipeline quickly before fine tuning it with real world data. I aggregate all the data. 
 
 ![Test image](https://github.com/KHKANG36/Lyft-Semantic-Segmentation-Challenge/blob/master/data/carla_data/10026.png)
+
+### 2) Pre-processing
