@@ -22,10 +22,9 @@ The challenge grades and ranks participants on a weighted F-score.It's more impo
 It was chosen that the beta for cars would be 2 and beta for roads would be 0.5 in this challenge.
 
 ## My Approach
-### 1) Data
+## 1. Data
+### Data Acquisition 
+1,000 Data is initially provided to each participant. Because 1,000 data is not the enough number for semantic segmentation training, I acquired more data (total 10,860 data) from [CARLA simulator](http://carla.org/) (Gathering more data from CARLA simulator is free for every participant). For data gathering, I came up with two strategies for robust data composition 1) Full diversity - I acquired data under the fully diversified environment such as a variety of weather condition, driving environment, road condition and so on. 2) Maximum number of vehicle & pedestrian - This challenge is the semantic segmentation for two objects, "Road" and "Vehicle". However, in provided data, the areas which "Road" occupy is much larger than those which "Vehicle" does. In this case, the vehicle cannot be detected well after training because road pixel donimate the images. Therefore, the number of vehicle should be over the certain level on the image in order to prohibit the "road data donimation". When I gather the data from CARLA simulator, I set the number of vehicle and pedestrian as maximum to accomplish it. Increased number of pedetrian also help to prohibit the "road data domination" because it helps to occupy the road pixel. Here's a sample of the input images (left) and the annotated segmentation images (right) produced by the simulator.
 ![Test image](https://github.com/KHKANG36/Lyft-Semantic-Segmentation-Challenge/blob/master/data/carla_data/sample_data.png)
-All camera data for this project comes from the the 'CARLA' simulator. Gathering data from a simulator is much faster than the real-world and allows us to iterate on our perception pipeline quickly before fine tuning it with real world data. I aggregate all the data. 
 
-![Test image](https://github.com/KHKANG36/Lyft-Semantic-Segmentation-Challenge/blob/master/data/carla_data/10026.png)
-
-### 2) Pre-processing
+### Data Pre-processing
